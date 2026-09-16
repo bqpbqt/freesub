@@ -2173,7 +2173,7 @@ def make_node_name(item, idx, force_residential=False):
     # Scamalytics 风控分: 高风险节点名内标注 (R分数), 低危不标 (保持简洁)
     fraud = item.get("fraud_score", -1)
     risk_tag = f" R{fraud}" if 0 <= fraud < 75 and fraud >= 40 else (" ⚠R" if fraud >= 75 else "")
-    return f"{flag} {cname} {idx:02d}{tag}{risk_tag} - xiaohe"
+    return f"{flag} {cname} {idx:02d}{tag}{risk_tag} - bqpbqt"
 
 
 def export_all(unique_nodes, residential, non_residential):
@@ -2283,13 +2283,13 @@ def export_singbox_json(sb_nodes, filepath):
 # ═══════════════════════════════════════════N═══════════════════════
 
 def update_readme(total_count, res_count):
-    repo_name = os.environ.get("GITHUB_REPOSITORY", "hezhanleiok/freesub").strip()
+    repo_name = os.environ.get("GITHUB_REPOSITORY", "bqpbqt/freesub").strip()
     cache_bust = ""
     # 私有化部署 Worker 脚本里的仓库参数 (默认值兜底)
     try:
         owner, repo = repo_name.split("/", 1)
     except ValueError:
-        owner, repo = "hezhanleiok", "freesub"
+        owner, repo = "bqpbqt", "freesub"
 
     def count_file(path):
         if not os.path.exists(path):
@@ -2330,7 +2330,7 @@ def update_readme(total_count, res_count):
 
     readme = f"""# 🚀 免费节点自动测活订阅池 (含真实家宽/住宅IP甄选)
 
-> 👤 **定制规范命名**: 所有订阅节点均重命名为 `国旗 地区 序号 (家宽) - xiaohe`
+> 👤 **定制规范命名**: 所有订阅节点均重命名为 `国旗 地区 序号 (家宽) - bqpbqt`
 > ⚡ **真实可用保障**: 所有节点由 `sing-box v{SINGBOX_VERSION}` 内核建立实际代理隧道, 完成真实 HTTPS 双向传输握手 + 出口 IP 穿透验证 + Cloudflare 限速下载断流检测 + TLS 证书校验 (MITM 劫持识别), 拒绝虚假通畅、断流节点与高危劫持节点。
 > 🛡️ **全协议支持**: VLESS (Reality/Vision) · VMESS · Trojan · Shadowsocks · Hysteria2 · TUIC · AnyTLS
 
