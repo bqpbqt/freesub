@@ -4,18 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - bqpbqt",
-      "server": "104.18.46.46",
-      "server_port": 2052,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls ",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
     },
     {
       "type": "shadowsocks",
@@ -28,34 +22,22 @@
     {
       "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt",
-      "server": "195.58.48.137",
-      "server_port": 9019,
-      "method": "aes-256-gcm",
-      "password": "8ad9d72a5571df86"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - bqpbqt",
       "server": "194.87.196.13",
       "server_port": 9011,
       "method": "aes-256-gcm",
       "password": "4938e975724d0ed1"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt",
-      "server": "91.240.86.70",
-      "server_port": 22443,
-      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy.quattro-tech.ru",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - bqpbqt",
+      "server": "195.58.48.137",
+      "server_port": 9019,
+      "method": "aes-256-gcm",
+      "password": "8ad9d72a5571df86"
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - bqpbqt",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -63,6 +45,29 @@
         "enabled": true,
         "server_name": "msk.frkn.org",
         "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - bqpbqt",
+      "server": "46.8.200.91",
+      "server_port": 443,
+      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf3.rumedia-cdn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/casc",
+        "headers": {
+          "Host": "cf3.rumedia-cdn.com"
+        }
       }
     },
     {
@@ -86,15 +91,22 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 08 - bqpbqt",
-      "server": "ru.xiaoliyu.cyou",
-      "server_port": 4433,
-      "password": "19f72087-4591-4d72-930b-2697078ec2be",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru.xiaoliyu.cyou",
-        "insecure": true
+      "server": "94.249.187.46",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "rSeYcig_XBy8q3k33NpK3A"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - bqpbqt",
+      "server": "ru2.oshost.network",
+      "server_port": 80,
+      "uuid": "419f25c1-bc35-412e-93fb-258efee859b5",
+      "transport": {
+        "type": "ws",
+        "path": "/api/v2/stream"
       }
     },
     {
@@ -109,7 +121,8 @@
         "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt",
         "🇷🇺 俄罗斯 (Russia) 06 - bqpbqt",
         "🇷🇺 俄罗斯 (Russia) 07 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 08 - bqpbqt"
+        "🇷🇺 俄罗斯 (Russia) 08 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 09 - bqpbqt"
       ]
     },
     {
@@ -123,7 +136,8 @@
         "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt",
         "🇷🇺 俄罗斯 (Russia) 06 - bqpbqt",
         "🇷🇺 俄罗斯 (Russia) 07 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 08 - bqpbqt"
+        "🇷🇺 俄罗斯 (Russia) 08 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 09 - bqpbqt"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
