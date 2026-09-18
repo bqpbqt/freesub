@@ -24,8 +24,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 02 - bqpbqt",
+      "server": "82.47.186.18",
+      "server_port": 19290,
+      "method": "aes-128-gcm",
+      "password": "o2rw2hICwu1blrr_gZAl2Q"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - bqpbqt",
       "server": "185.255.179.11",
       "server_port": 9443,
       "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
@@ -45,7 +53,8 @@
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - bqpbqt",
-        "🇫🇮 芬兰 (Finland) 02 - bqpbqt"
+        "🇫🇮 芬兰 (Finland) 02 - bqpbqt",
+        "🇫🇮 芬兰 (Finland) 03 - bqpbqt"
       ]
     },
     {
@@ -53,7 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - bqpbqt",
-        "🇫🇮 芬兰 (Finland) 02 - bqpbqt"
+        "🇫🇮 芬兰 (Finland) 02 - bqpbqt",
+        "🇫🇮 芬兰 (Finland) 03 - bqpbqt"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
