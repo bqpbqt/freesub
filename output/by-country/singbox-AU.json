@@ -44,20 +44,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - bqpbqt",
-      "server": "82.115.31.187",
-      "server_port": 36900,
-      "password": "ap5201314",
-      "tls": {
-        "enabled": true,
-        "server_name": "82.115.31.187",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - bqpbqt",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - bqpbqt",
       "server": "34.87.244.111",
       "server_port": 443,
       "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
@@ -66,7 +54,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -83,8 +71,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - bqpbqt",
         "🇦🇺 澳大利亚 (Australia) 02 - bqpbqt",
         "🇦🇺 澳大利亚 (Australia) 03 - bqpbqt",
-        "🇦🇺 澳大利亚 (Australia) 04 - bqpbqt",
-        "🇦🇺 澳大利亚 (Australia) 05 - bqpbqt"
+        "🇦🇺 澳大利亚 (Australia) 04 - bqpbqt"
       ]
     },
     {
@@ -94,8 +81,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - bqpbqt",
         "🇦🇺 澳大利亚 (Australia) 02 - bqpbqt",
         "🇦🇺 澳大利亚 (Australia) 03 - bqpbqt",
-        "🇦🇺 澳大利亚 (Australia) 04 - bqpbqt",
-        "🇦🇺 澳大利亚 (Australia) 05 - bqpbqt"
+        "🇦🇺 澳大利亚 (Australia) 04 - bqpbqt"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
