@@ -4,27 +4,151 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - bqpbqt",
+      "server": "104.18.46.46",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt",
+      "server": "188.114.96.3",
+      "server_port": 443,
+      "password": "Telegram_healer_config",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdtfrgmtcsbaarmz-9owpz7g4.f9w96pzky6un-covzx6b-hzlm80woj2.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/3F3fUAGJks9doKvjt8AREH4QR",
+        "headers": {
+          "Host": "cdtfrgmtcsbaarmz-9owpz7g4.f9w96pzky6un-covzx6b-hzlm80woj2.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt",
+      "server": "162.159.48.32",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - bqpbqt",
+      "server": "94.249.187.46",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IXa3ylzS_jBOAsQy071tIQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt",
+      "server": "134.0.112.71",
+      "server_port": 17517,
+      "method": "aes-256-gcm",
+      "password": "64Kms+G+nD6FlGJjZJfeUNJIGbX/EKrk2o/MH04zApw="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - bqpbqt",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
         "server_name": "hy.quattro-tech.ru",
-        "insecure": false
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - bqpbqt",
+      "server": "195.133.5.102",
+      "server_port": 10900,
+      "method": "aes-256-gcm",
+      "password": "895b4b796a357570"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - bqpbqt",
+      "server": "104.245.240.8",
+      "server_port": 8443,
+      "uuid": "bb20d3fc-fc15-0935-11c5-82775c39e6b0",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.epson.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-GbQJg3bnEGEVFjVaRRu01cgF1f0K_maI4d5MWtMb28",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - bqpbqt",
+      "server": "xssite.webredirect.org",
+      "server_port": 443,
+      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
+      "tls": {
+        "enabled": true,
+        "server_name": "xssite.webredirect.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-ru"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt",
+      "tag": "🇷🇺 俄罗斯 (Russia) 10 - bqpbqt",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
       "tls": {
         "enabled": true,
         "server_name": "msk.frkn.org",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -33,7 +157,15 @@
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt"
+        "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 04 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 06 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 07 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 08 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 09 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 10 - bqpbqt"
       ]
     },
     {
@@ -41,7 +173,15 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt"
+        "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 04 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 06 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 07 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 08 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 09 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 10 - bqpbqt"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
