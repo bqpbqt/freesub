@@ -4,36 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - bqpbqt",
-      "server": "195.133.5.102",
-      "server_port": 10900,
-      "method": "aes-256-gcm",
-      "password": "895b4b796a357570"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU="
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - bqpbqt",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
-        "server_name": "itsallproxy.quattro-tech.ru",
-        "insecure": false
+        "server_name": "hy.quattro-tech.ru",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - bqpbqt",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -45,7 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt",
       "server": "45.12.75.242",
       "server_port": 26424,
       "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
@@ -64,24 +48,13 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - bqpbqt",
-      "server": "94.249.187.46",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "IXa3ylzS_jBOAsQy071tIQ"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - bqpbqt",
         "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 04 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 06 - bqpbqt"
+        "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt"
       ]
     },
     {
@@ -90,10 +63,7 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - bqpbqt",
         "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 04 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 06 - bqpbqt"
+        "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
