@@ -5,7 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - bqpbqt
-  server: vj37-1936vtw.fincore.top
+  server: 119.246.1.143
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me/ripaojiedian
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - bqpbqt
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - bqpbqt
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - bqpbqt
+  server: 162.128.157.164
   port: 443
   udp: true
   type: vless
@@ -16,39 +40,22 @@ proxies:
     public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
     short-id: 14156e3ac23212cc
   servername: www.bing.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - bqpbqt
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8🇨🇳
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - bqpbqt
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - bqpbqt
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - bqpbqt
-  server: 119.246.1.143
+  server: 109.66.88.158
   port: 443
   udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
   skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - bqpbqt
   server: 195.58.144.56
   port: 11907
@@ -58,30 +65,8 @@ proxies:
   tls: true
   servername: 195.58.144.56
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - bqpbqt
-  server: mz.hkychina.com
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - bqpbqt
-  server: 160.30.54.63
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /channel?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - bqpbqt
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - bqpbqt
   server: 47.238.210.5
   port: 13779
   udp: true
@@ -92,7 +77,64 @@ proxies:
     public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
     short-id: af1bdd293097b664
   servername: tesla.com
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - bqpbqt
+  server: 47.83.4.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8952ecb7-4b85-4aa5-8b22-adc9aa4d3591
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ID53PilNajhqBP3PTJJxurZOFnZfKVs-CU5buNOaKBQ
+    short-id: e40b98d40e53b8b9
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - bqpbqt
+  server: 104.16.60.10
+  port: 443
+  udp: true
+  type: vless
+  uuid: cdf5205e-897f-46a7-8d7f-21a61a80b466
+  tls: true
+  servername: hk1.69lover.my
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /api/v2/e2fe4e52a165854d/stream
+    headers:
+      Host: hk1.69lover.my
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - bqpbqt
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - bqpbqt
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.29
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - bqpbqt
+  server: hk3.mfm-oss.top
+  port: 60013
+  udp: true
+  type: vless
+  uuid: 2dd387bd-6d19-473a-8d5e-ecbca573b0f9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nzwLXAhU6QUZGQfzHACFSxc0T1YHfBxZs9Rlc2jXews
+    short-id: 7a91fe90e1d176fc
+  servername: www.xiaohongshu.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -107,6 +149,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - bqpbqt
   - 🇭🇰 中国香港 (Hong Kong) 08 - bqpbqt
   - 🇭🇰 中国香港 (Hong Kong) 09 - bqpbqt
+  - 🇭🇰 中国香港 (Hong Kong) 10 - bqpbqt
+  - 🇭🇰 中国香港 (Hong Kong) 11 - bqpbqt
+  - 🇭🇰 中国香港 (Hong Kong) 12 - bqpbqt
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -121,5 +166,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - bqpbqt
   - 🇭🇰 中国香港 (Hong Kong) 08 - bqpbqt
   - 🇭🇰 中国香港 (Hong Kong) 09 - bqpbqt
+  - 🇭🇰 中国香港 (Hong Kong) 10 - bqpbqt
+  - 🇭🇰 中国香港 (Hong Kong) 11 - bqpbqt
+  - 🇭🇰 中国香港 (Hong Kong) 12 - bqpbqt
 rules:
 - MATCH,PROXIES
