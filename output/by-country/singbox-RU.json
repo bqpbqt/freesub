@@ -4,21 +4,35 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - bqpbqt",
-      "server": "91.240.86.70",
-      "server_port": 22443,
-      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
+      "server": "199.232.78.101",
+      "server_port": 443,
+      "password": "MiTIVPN",
       "tls": {
         "enabled": true,
-        "server_name": "hy.quattro-tech.ru",
-        "insecure": false
+        "server_name": "ssl.fastly.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt",
-      "server": "132.243.203.207",
+      "server": "64.225.65.116",
       "server_port": 8443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
@@ -32,33 +46,22 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/lives?ed=2560",
+        "path": "/bd/pictures?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt",
-      "server": "103.31.77.108",
-      "server_port": 2053,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "server": "91.240.86.70",
+      "server_port": 22443,
+      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/channels/act",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
+        "server_name": "itsallproxy.quattro-tech.ru",
+        "insecure": true
       }
     },
     {
@@ -81,6 +84,26 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -88,7 +111,8 @@
         "🇷🇺 俄罗斯 (Russia) 01 - bqpbqt",
         "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt",
         "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 04 - bqpbqt"
+        "🇷🇺 俄罗斯 (Russia) 04 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt"
       ]
     },
     {
@@ -98,7 +122,8 @@
         "🇷🇺 俄罗斯 (Russia) 01 - bqpbqt",
         "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt",
         "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 04 - bqpbqt"
+        "🇷🇺 俄罗斯 (Russia) 04 - bqpbqt",
+        "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

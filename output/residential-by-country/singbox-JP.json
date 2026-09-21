@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 01 (家宽) - bqpbqt",
-      "server": "45.76.206.46",
+      "server": "92.113.124.253",
       "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
@@ -16,7 +16,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/tags/go/groups?ed=2560",
+        "path": "/redirect.html/list/episode?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
