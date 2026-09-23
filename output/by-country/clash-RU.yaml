@@ -5,22 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - bqpbqt
+  server: 104.21.4.124
+  port: 443
+  udp: true
+  type: trojan
+  password: Telegram_healer_config
+  sni: vre6r9qrbqi0t25tg.srtb0m3hdbwr2cjz8fjur.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /tr/W3Ei3SdcW9sRVMLIbEd8sB1lm?ed=2560
+- name: 🇷🇺 俄罗斯 (Russia) 02 - bqpbqt
+  server: 130.49.218.208
+  port: 5432
+  udp: true
+  type: vless
+  uuid: cc01f435-d561-4525-bf1f-7a9876d33207
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 130.49.218.208
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 03 - bqpbqt
+  server: 94.228.171.159
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 5b754a1a-11aa-4df9-a8ba-44af9a579fe1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hcjZwWlIplwEKT-Ea-vTM2n4jwiTCeL9wTUZG0WgCj0
+  servername: de.b2ai.top
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 04 - bqpbqt
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 02 - bqpbqt
-  server: msk.frkn.org
-  port: 443
-  udp: true
-  type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 03 - bqpbqt
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - bqpbqt
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -32,6 +57,20 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 06 - bqpbqt
+  server: 46.8.200.91
+  port: 443
+  udp: true
+  type: vless
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  tls: true
+  servername: cf3.rumedia-cdn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf3.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,6 +79,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - bqpbqt
   - 🇷🇺 俄罗斯 (Russia) 02 - bqpbqt
   - 🇷🇺 俄罗斯 (Russia) 03 - bqpbqt
+  - 🇷🇺 俄罗斯 (Russia) 04 - bqpbqt
+  - 🇷🇺 俄罗斯 (Russia) 05 - bqpbqt
+  - 🇷🇺 俄罗斯 (Russia) 06 - bqpbqt
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +90,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - bqpbqt
   - 🇷🇺 俄罗斯 (Russia) 02 - bqpbqt
   - 🇷🇺 俄罗斯 (Russia) 03 - bqpbqt
+  - 🇷🇺 俄罗斯 (Russia) 04 - bqpbqt
+  - 🇷🇺 俄罗斯 (Russia) 05 - bqpbqt
+  - 🇷🇺 俄罗斯 (Russia) 06 - bqpbqt
 rules:
 - MATCH,PROXIES
