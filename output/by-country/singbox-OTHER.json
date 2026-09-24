@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - bqpbqt",
-      "server": "104.16.10.185",
+      "server": "104.17.247.68",
       "server_port": 443,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "uuid": "e6cc4788-3c45-4df1-94f3-8303504a65bf",
       "tls": {
         "enabled": true,
-        "server_name": "v2ray.simspeedup.com",
+        "server_name": "khoda.ak-khoda.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,70 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/sync",
         "headers": {
-          "Host": "v2ray.simspeedup.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 02 - bqpbqt",
-      "server": "104.16.10.185",
-      "server_port": 443,
-      "uuid": "44eae030-290b-4083-8102-6f8bab05701b",
-      "tls": {
-        "enabled": true,
-        "server_name": "cfvvv-ev1.pages.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "cfvvv-ev1.pages.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 03 - bqpbqt",
-      "server": "104.16.10.185",
-      "server_port": 443,
-      "uuid": "44eae030-290b-4083-8102-6f8bab05701b",
-      "tls": {
-        "enabled": true,
-        "server_name": "cfvvv-ev1.pages.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "cfvvv-ev1.pages.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 04 - bqpbqt",
-      "server": "104.16.10.185",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
+          "Host": "khoda.ak-khoda.workers.dev"
         }
       }
     },
@@ -92,20 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - bqpbqt",
-        "🌐 其他地区 (Other) 02 - bqpbqt",
-        "🌐 其他地区 (Other) 03 - bqpbqt",
-        "🌐 其他地区 (Other) 04 - bqpbqt"
+        "🌐 其他地区 (Other) 01 - bqpbqt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - bqpbqt",
-        "🌐 其他地区 (Other) 02 - bqpbqt",
-        "🌐 其他地区 (Other) 03 - bqpbqt",
-        "🌐 其他地区 (Other) 04 - bqpbqt"
+        "🌐 其他地区 (Other) 01 - bqpbqt"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
