@@ -6,7 +6,30 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - bqpbqt",
-      "server": "193.56.135.212",
+      "server": "8.6.112.9",
+      "server_port": 443,
+      "uuid": "11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf",
+      "tls": {
+        "enabled": true,
+        "server_name": "ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
+        "headers": {
+          "Host": "ancient-heart-60c5.dpccgizieb.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 02 - bqpbqt",
+      "server": "193.56.135.233",
       "server_port": 9543,
       "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
       "flow": "xtls-rprx-vision",
@@ -15,7 +38,7 @@
         "server_name": "storage.yandexcloud.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +52,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - bqpbqt"
+        "🇮🇶 IQ 01 - bqpbqt",
+        "🇮🇶 IQ 02 - bqpbqt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - bqpbqt"
+        "🇮🇶 IQ 01 - bqpbqt",
+        "🇮🇶 IQ 02 - bqpbqt"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
