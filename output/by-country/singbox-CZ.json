@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇩🇿 DZ 01 - bqpbqt",
-      "server": "85.204.107.178",
-      "server_port": 8443,
-      "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
-      "tls": {
-        "enabled": true,
-        "server_name": "hopp-romania-new.roxa.org",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇨🇿 捷克 (Czech) 01 - bqpbqt",
+      "server": "141.227.134.63",
+      "server_port": 17000,
+      "method": "aes-256-gcm",
+      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇿 DZ 01 - bqpbqt"
+        "🇨🇿 捷克 (Czech) 01 - bqpbqt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇿 DZ 01 - bqpbqt"
+        "🇨🇿 捷克 (Czech) 01 - bqpbqt"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

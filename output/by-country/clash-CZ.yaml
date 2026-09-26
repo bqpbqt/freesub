@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇿 DZ 01 - bqpbqt
-  server: 85.204.107.178
-  port: 8443
+- name: 🇨🇿 捷克 (Czech) 01 - bqpbqt
+  server: 141.227.134.63
+  port: 17000
   udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇿 DZ 01 - bqpbqt
+  - 🇨🇿 捷克 (Czech) 01 - bqpbqt
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇿 DZ 01 - bqpbqt
+  - 🇨🇿 捷克 (Czech) 01 - bqpbqt
 rules:
 - MATCH,PROXIES
