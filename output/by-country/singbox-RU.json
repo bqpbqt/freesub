@@ -6,52 +6,20 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - bqpbqt",
-      "server": "188.114.96.3",
-      "server_port": 2087,
-      "uuid": "756e8f39-04e8-436d-b5c6-905d37d9562c",
-      "tls": {
-        "enabled": true,
-        "server_name": "ez-98919a.motoricb.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "162.159.43.187",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ",
+        "path": "/?ed=2560security=tls",
         "headers": {
-          "Host": "ez-98919a.motoricb.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt",
-      "server": "104.21.5.173",
-      "server_port": 2096,
-      "uuid": "7c6a566b-4c4a-b8f2-1719-a3096b424141",
-      "tls": {
-        "enabled": true,
-        "server_name": "peekconfigg.vipserver1-39d.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "peekconfigg.vipserver1-39d.workers.dev"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt",
       "server": "176.32.35.2",
       "server_port": 10090,
       "method": "aes-256-gcm",
@@ -59,44 +27,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - bqpbqt",
-      "server": "104.21.55.123",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt",
+      "server": "217.19.122.200",
       "server_port": 443,
-      "uuid": "95de071f-747c-dc07-36ac-5c0854a9e50e",
+      "uuid": "bc5ec86c-3e65-4272-994c-59a924c72a68",
       "tls": {
         "enabled": true,
-        "server_name": "restless-boat-ebf2.moha102030.workers.dev",
-        "insecure": false,
+        "server_name": "fbsv6.guardora.pro",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/ws",
         "headers": {
-          "Host": "restless-boat-ebf2.moha102030.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt",
-      "server": "45.12.75.242",
-      "server_port": 26424,
-      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
-      "tls": {
-        "enabled": true,
-        "server_name": "ya.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
-          "short_id": "23103e1e"
+          "Host": "fbsv6.guardora.pro"
         }
       }
     },
@@ -107,9 +58,7 @@
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - bqpbqt",
         "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 04 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt"
+        "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt"
       ]
     },
     {
@@ -118,9 +67,7 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - bqpbqt",
         "🇷🇺 俄罗斯 (Russia) 02 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 04 - bqpbqt",
-        "🇷🇺 俄罗斯 (Russia) 05 - bqpbqt"
+        "🇷🇺 俄罗斯 (Russia) 03 - bqpbqt"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
