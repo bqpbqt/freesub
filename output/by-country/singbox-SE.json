@@ -6,22 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - bqpbqt",
-      "server": "13.62.228.76",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - bqpbqt",
-      "server": "51.20.86.152",
+      "server": "51.20.96.231",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - bqpbqt",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - bqpbqt",
       "server": "62.60.159.81",
       "server_port": 2053,
       "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
@@ -45,8 +37,8 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - bqpbqt",
-      "server": "13.48.104.64",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - bqpbqt",
+      "server": "51.20.86.152",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -58,8 +50,7 @@
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - bqpbqt",
         "🇸🇪 瑞典 (Sweden) 02 - bqpbqt",
-        "🇸🇪 瑞典 (Sweden) 03 - bqpbqt",
-        "🇸🇪 瑞典 (Sweden) 04 - bqpbqt"
+        "🇸🇪 瑞典 (Sweden) 03 - bqpbqt"
       ]
     },
     {
@@ -68,8 +59,7 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - bqpbqt",
         "🇸🇪 瑞典 (Sweden) 02 - bqpbqt",
-        "🇸🇪 瑞典 (Sweden) 03 - bqpbqt",
-        "🇸🇪 瑞典 (Sweden) 04 - bqpbqt"
+        "🇸🇪 瑞典 (Sweden) 03 - bqpbqt"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
