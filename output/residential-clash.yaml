@@ -4,15 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - bqpbqt
-  server: 818667a4-tmm5c0-tpsg94-1jbj0.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: b2c6384c-f63d-11ec-b1b3-f23c91cfbbc9
-  sni: 818667a4-tmm5c0-tpsg94-1jbj0.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - bqpbqt
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - bqpbqt
   server: 118.167.235.241
   port: 24215
   udp: true
@@ -28,14 +20,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - bqpbqt
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - bqpbqt
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - bqpbqt
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - bqpbqt
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - bqpbqt
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - bqpbqt
 rules:
 - MATCH,PROXIES
