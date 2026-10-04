@@ -5,63 +5,43 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - bqpbqt
-  server: telegram.khp25.com
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: pno0e2keji2gsfea
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - bqpbqt
-  server: sth.free-outline.giize.com
-  port: 1081
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 5koepr9k4rjabc1z
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - bqpbqt
   server: telegramx.khp25.com
   port: 1080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: m5nsedvdczx6x06e
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - bqpbqt
-  server: ru1.xiaoliyu.cyou
-  port: 18333
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - bqpbqt
+  server: sth.free-outline.giize.com
+  port: 1081
   udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: ru1.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - bqpbqt
-  server: 34.96.188.243
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: n7vuxdsmlqnrbxqe
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - bqpbqt
+  server: telegram.khp25.com
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: pno0e2keji2gsfea
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - bqpbqt
+  server: 61b2ab79-tmm5c0-u1q5od-t6fv.hk3.hyhuawei.com
   port: 443
   udp: true
-  type: vless
-  uuid: 75d38591-267e-4d89-98bc-164f25b50880
-  tls: true
-  reality-opts:
-    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
-    short-id: 64b3f192fc0669e1
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - bqpbqt
+  type: hysteria2
+  password: af7ddbb2-3567-11ec-bd7c-f23c913c8d2b
+  sni: 61b2ab79-tmm5c0-u1q5od-t6fv.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - bqpbqt
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
+  sni: https://t.me/clashv8
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - bqpbqt
-  server: strong-haddock.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: strong-haddock.rooster465.autos
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - bqpbqt
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - bqpbqt
   server: 202.146.222.174
   port: 443
   udp: true
@@ -69,32 +49,32 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - bqpbqt
-  server: 47.76.44.32
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - bqpbqt
+  server: 185.244.208.69
   port: 443
   udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  type: trojan
+  password: UX82473651
+  sni: strong-haddock.rooster465.autos
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 93ucrn4i0pffuabk.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - bqpbqt
-  server: mz.hkychina.com
-  port: 8443
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - bqpbqt
+  server: ru1.xiaoliyu.cyou
+  port: 18333
   udp: true
   type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - bqpbqt
-  server: aksai.org
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: ru1.xiaoliyu.cyou
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - bqpbqt
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - bqpbqt
+  server: 194.99.79.26
   port: 443
   udp: true
   type: vmess
@@ -107,30 +87,14 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - bqpbqt
-  server: dc5d989c-tmm5c0-tzxeoy-hns7.nw4.hyhuawei.com
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - bqpbqt
+  server: mz.hkychina.com
+  port: 8443
   udp: true
   type: hysteria2
-  password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
-  sni: dc5d989c-tmm5c0-tzxeoy-hns7.nw4.hyhuawei.com
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - bqpbqt
-  server: 8.218.195.61
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: EX1oGt73NzPQKAc2.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: EX1oGt73NzPQKAc2.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -147,8 +111,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - bqpbqt
   - 🇭🇰 中国香港 (Hong Kong) 10 - bqpbqt
   - 🇭🇰 中国香港 (Hong Kong) 11 - bqpbqt
-  - 🇭🇰 中国香港 (Hong Kong) 12 - bqpbqt
-  - 🇭🇰 中国香港 (Hong Kong) 13 - bqpbqt
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -165,7 +127,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - bqpbqt
   - 🇭🇰 中国香港 (Hong Kong) 10 - bqpbqt
   - 🇭🇰 中国香港 (Hong Kong) 11 - bqpbqt
-  - 🇭🇰 中国香港 (Hong Kong) 12 - bqpbqt
-  - 🇭🇰 中国香港 (Hong Kong) 13 - bqpbqt
 rules:
 - MATCH,PROXIES
