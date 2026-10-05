@@ -13,6 +13,14 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - bqpbqt
+  server: 160.187.100.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 160.187.100.109
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - bqpbqt
   server: 130.211.240.128
   port: 443
   udp: true
@@ -24,14 +32,6 @@ proxies:
     short-id: d74a6321deec9f31
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - bqpbqt
-  server: 103.115.109.49
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a
-  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - bqpbqt
   server: 60.248.219.78
   port: 443
@@ -59,19 +59,6 @@ proxies:
   udp-relay-mode: native
   alpn:
   - h3
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - bqpbqt
-  server: tw6.dexlos.com
-  port: 8080
-  udp: true
-  type: tuic
-  uuid: D7286728-678E-443B-B76B-B699654C66DD
-  password: D7286728-678E-443B-B76B-B699654C66DD
-  sni: tw6.dexlos.com
-  skip-cert-verify: true
-  congestion-controller: bbr
-  udp-relay-mode: native
-  alpn:
-  - h3
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,7 +69,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 - bqpbqt
   - 🇹🇼 中国台湾 (Taiwan) 04 - bqpbqt
   - 🇹🇼 中国台湾 (Taiwan) 05 - bqpbqt
-  - 🇹🇼 中国台湾 (Taiwan) 06 - bqpbqt
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,6 +79,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 - bqpbqt
   - 🇹🇼 中国台湾 (Taiwan) 04 - bqpbqt
   - 🇹🇼 中国台湾 (Taiwan) 05 - bqpbqt
-  - 🇹🇼 中国台湾 (Taiwan) 06 - bqpbqt
 rules:
 - MATCH,PROXIES
