@@ -12,36 +12,20 @@
       "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 02 - bqpbqt",
-      "server": "45.149.114.171",
-      "server_port": 777,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - bqpbqt",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+      "server": "144.31.212.253",
+      "server_port": 443,
+      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
-        }
+        "server_name": "vps155-edge.kermemehori.ru",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - bqpbqt",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - bqpbqt",
       "server": "131.123.13.93",
       "server_port": 443,
       "uuid": "55ccbeb5-0bf4-4e4d-afcb-23c038e73e00",
@@ -61,27 +45,13 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - bqpbqt",
-      "server": "144.31.212.253",
-      "server_port": 443,
-      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps155-edge.kermemehori.ru",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - bqpbqt",
         "🇫🇮 芬兰 (Finland) 02 - bqpbqt",
-        "🇫🇮 芬兰 (Finland) 03 - bqpbqt",
-        "🇫🇮 芬兰 (Finland) 04 - bqpbqt",
-        "🇫🇮 芬兰 (Finland) 05 - bqpbqt"
+        "🇫🇮 芬兰 (Finland) 03 - bqpbqt"
       ]
     },
     {
@@ -90,9 +60,7 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - bqpbqt",
         "🇫🇮 芬兰 (Finland) 02 - bqpbqt",
-        "🇫🇮 芬兰 (Finland) 03 - bqpbqt",
-        "🇫🇮 芬兰 (Finland) 04 - bqpbqt",
-        "🇫🇮 芬兰 (Finland) 05 - bqpbqt"
+        "🇫🇮 芬兰 (Finland) 03 - bqpbqt"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
