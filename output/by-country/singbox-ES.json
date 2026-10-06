@@ -4,8 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇪🇸 西班牙 (Spain) 01 - bqpbqt",
+      "server": "185.174.137.172",
+      "server_port": 8446,
+      "password": "e9dc02d400b67c727aca1620",
+      "tls": {
+        "enabled": true,
+        "server_name": "185.174.137.172",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - bqpbqt",
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - bqpbqt",
       "server": "108.181.121.226",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -13,7 +33,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - bqpbqt",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - bqpbqt",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -33,7 +53,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - bqpbqt",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - bqpbqt",
       "server": "193.238.154.5",
       "server_port": 443,
       "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
@@ -52,12 +72,46 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - bqpbqt",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - bqpbqt",
+      "server": "es4.h1cloud.net",
+      "server_port": 25047,
+      "uuid": "55a2940a-ae07-40b4-ab32-4d3e0617731f",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "opG0oNW-PMHi8V4E0101eEqOqPlZVKCuRkF6dcWeqBU",
+          "short_id": "8b7227d48365dda9"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 07 - bqpbqt",
+      "server": "212.227.144.37",
+      "server_port": 8443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false,
+        "alpn": [
+          "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
     },
     {
       "type": "selector",
@@ -67,7 +121,10 @@
         "🇪🇸 西班牙 (Spain) 01 - bqpbqt",
         "🇪🇸 西班牙 (Spain) 02 - bqpbqt",
         "🇪🇸 西班牙 (Spain) 03 - bqpbqt",
-        "🇪🇸 西班牙 (Spain) 04 - bqpbqt"
+        "🇪🇸 西班牙 (Spain) 04 - bqpbqt",
+        "🇪🇸 西班牙 (Spain) 05 - bqpbqt",
+        "🇪🇸 西班牙 (Spain) 06 - bqpbqt",
+        "🇪🇸 西班牙 (Spain) 07 - bqpbqt"
       ]
     },
     {
@@ -77,7 +134,10 @@
         "🇪🇸 西班牙 (Spain) 01 - bqpbqt",
         "🇪🇸 西班牙 (Spain) 02 - bqpbqt",
         "🇪🇸 西班牙 (Spain) 03 - bqpbqt",
-        "🇪🇸 西班牙 (Spain) 04 - bqpbqt"
+        "🇪🇸 西班牙 (Spain) 04 - bqpbqt",
+        "🇪🇸 西班牙 (Spain) 05 - bqpbqt",
+        "🇪🇸 西班牙 (Spain) 06 - bqpbqt",
+        "🇪🇸 西班牙 (Spain) 07 - bqpbqt"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
