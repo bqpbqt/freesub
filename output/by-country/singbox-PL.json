@@ -17,18 +17,12 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - bqpbqt",
-      "server": "81.90.20.200",
-      "server_port": 443,
-      "uuid": "51c14658-8873-4454-9383-c41fc80bde4b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.pupoe.sbs",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+      "server": "70.34.255.101",
+      "server_port": 80,
+      "uuid": "a889262f-5fe3-4c93-9aaa-3721318dd389",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -46,7 +40,7 @@
     {
       "type": "trojan",
       "tag": "🇵🇱 波兰 (Poland) 04 - bqpbqt",
-      "server": "cheerful-swan.rooster465.autos",
+      "server": "202.78.163.237",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
@@ -64,7 +58,7 @@
       "tls": {
         "enabled": true,
         "server_name": "admin.wwwinternetvideo.click",
-        "insecure": false
+        "insecure": true
       }
     },
     {
