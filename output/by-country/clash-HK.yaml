@@ -5,30 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - bqpbqt
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - bqpbqt
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - bqpbqt
-  server: 185.244.208.69
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: strong-haddock.rooster465.autos
-  skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - bqpbqt
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
+  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - bqpbqt
+  server: 185.244.208.69
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: strong-haddock.rooster465.autos
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - bqpbqt
   server: hk2.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -36,39 +44,7 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: hk2.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - bqpbqt
-  server: 194.99.79.26
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: aksai.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - bqpbqt
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%c3%b0%c2%9f%c2%87%c2%a8%c3%b0%c2%9f%c2%87%c2%b3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - bqpbqt
-  server: mz.hkychina.com
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - bqpbqt
   server: 2.27.109.179
   port: 45464
   udp: true
@@ -76,22 +52,6 @@ proxies:
   password: XuMweB2PWs
   sni: 2.27.109.179.sslip.io
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - bqpbqt
-  server: yg1.ygkkk.dpdns.org
-  port: 443
-  udp: true
-  type: vmess
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: jmp1.907737.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-    headers:
-      Host: jmp1.907737.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,9 +63,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - bqpbqt
   - 🇭🇰 中国香港 (Hong Kong) 05 - bqpbqt
   - 🇭🇰 中国香港 (Hong Kong) 06 - bqpbqt
-  - 🇭🇰 中国香港 (Hong Kong) 07 - bqpbqt
-  - 🇭🇰 中国香港 (Hong Kong) 08 - bqpbqt
-  - 🇭🇰 中国香港 (Hong Kong) 09 - bqpbqt
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -117,8 +74,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - bqpbqt
   - 🇭🇰 中国香港 (Hong Kong) 05 - bqpbqt
   - 🇭🇰 中国香港 (Hong Kong) 06 - bqpbqt
-  - 🇭🇰 中国香港 (Hong Kong) 07 - bqpbqt
-  - 🇭🇰 中国香港 (Hong Kong) 08 - bqpbqt
-  - 🇭🇰 中国香港 (Hong Kong) 09 - bqpbqt
 rules:
 - MATCH,PROXIES
