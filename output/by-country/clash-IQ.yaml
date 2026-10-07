@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - bqpbqt
-  server: 45.192.201.140
+- name: 🇮🇶 IQ 01 - bqpbqt
+  server: 188.114.96.3
   port: 443
   udp: true
   type: vless
-  uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
+  uuid: 5d4f5139-6965-42ed-8dba-fe3ef9fed7c1
   tls: true
-  servername: argo6.5671234.xyz
+  servername: 022XW1dMCzG0C6165Pcla6.tOMBORn69.WOrkErS.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /e8e2cecb6188f7fb
+    path: /vl/9QqHUXZVAXGwloTMo5uOQLnnjSncQ?ed=2560
     headers:
-      Host: argo6.5671234.xyz
+      Host: 022xw1dmczg0c6165pcla6.tomborn69.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - bqpbqt
+  - 🇮🇶 IQ 01 - bqpbqt
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - bqpbqt
+  - 🇮🇶 IQ 01 - bqpbqt
 rules:
 - MATCH,PROXIES
