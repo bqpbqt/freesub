@@ -12,13 +12,6 @@ proxies:
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
 - name: 🇷🇺 俄罗斯 (Russia) 02 - bqpbqt
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8=
-- name: 🇷🇺 俄罗斯 (Russia) 03 - bqpbqt
   server: srv-17e124.21freedom.net
   port: 11592
   udp: true
@@ -26,8 +19,8 @@ proxies:
   password: 41edb44c8e
   sni: srv-17e124.21freedom.net
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 04 - bqpbqt
-  server: 5.42.99.64
+- name: 🇷🇺 俄罗斯 (Russia) 03 - bqpbqt
+  server: du-rov.secureservice.top
   port: 8443
   udp: true
   type: vless
@@ -47,7 +40,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - bqpbqt
   - 🇷🇺 俄罗斯 (Russia) 02 - bqpbqt
   - 🇷🇺 俄罗斯 (Russia) 03 - bqpbqt
-  - 🇷🇺 俄罗斯 (Russia) 04 - bqpbqt
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,6 +48,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - bqpbqt
   - 🇷🇺 俄罗斯 (Russia) 02 - bqpbqt
   - 🇷🇺 俄罗斯 (Russia) 03 - bqpbqt
-  - 🇷🇺 俄罗斯 (Russia) 04 - bqpbqt
 rules:
 - MATCH,PROXIES
