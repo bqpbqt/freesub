@@ -13,33 +13,19 @@ proxies:
   password: xaupMUvhptwxdDUg
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - bqpbqt
   server: 195.238.126.20
-  port: 9001
+  port: 9008
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
+  password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - bqpbqt
   server: 195.238.126.20
-  port: 9045
+  port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
+  password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - bqpbqt
-  server: 195.238.126.20
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - bqpbqt
-  server: 195.238.126.20
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - bqpbqt
   server: 195.238.126.20
   port: 9002
   udp: true
@@ -55,8 +41,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 02 - bqpbqt
   - 🇱🇹 立陶宛 (Lithuania) 03 - bqpbqt
   - 🇱🇹 立陶宛 (Lithuania) 04 - bqpbqt
-  - 🇱🇹 立陶宛 (Lithuania) 05 - bqpbqt
-  - 🇱🇹 立陶宛 (Lithuania) 06 - bqpbqt
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,7 +50,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 02 - bqpbqt
   - 🇱🇹 立陶宛 (Lithuania) 03 - bqpbqt
   - 🇱🇹 立陶宛 (Lithuania) 04 - bqpbqt
-  - 🇱🇹 立陶宛 (Lithuania) 05 - bqpbqt
-  - 🇱🇹 立陶宛 (Lithuania) 06 - bqpbqt
 rules:
 - MATCH,PROXIES
