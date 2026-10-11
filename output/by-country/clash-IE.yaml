@@ -11,7 +11,7 @@ proxies:
   type: trojan
   password: UX82473651
   sni: master-possum.rooster465.autos
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - bqpbqt
   server: adapting-basilisk.rooster465.autos
   port: 443
@@ -21,20 +21,28 @@ proxies:
   sni: adapting-basilisk.rooster465.autos
   skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - bqpbqt
-  server: 34.242.77.118
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: sacred-anemone.rooster465.autos
-  skip-cert-verify: false
-- name: 🇮🇪 爱尔兰 (Ireland) 04 - bqpbqt
   server: 3.255.76.207
   port: 443
   udp: true
   type: trojan
   password: Trojan@82164024
   sni: ie.tronsg.com
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 04 - bqpbqt
+  server: sacred-anemone.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: sacred-anemone.rooster465.autos
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 05 - bqpbqt
+  server: 3.253.106.233
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: loved-shark.rooster465.autos
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -45,6 +53,7 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 02 - bqpbqt
   - 🇮🇪 爱尔兰 (Ireland) 03 - bqpbqt
   - 🇮🇪 爱尔兰 (Ireland) 04 - bqpbqt
+  - 🇮🇪 爱尔兰 (Ireland) 05 - bqpbqt
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +63,6 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 02 - bqpbqt
   - 🇮🇪 爱尔兰 (Ireland) 03 - bqpbqt
   - 🇮🇪 爱尔兰 (Ireland) 04 - bqpbqt
+  - 🇮🇪 爱尔兰 (Ireland) 05 - bqpbqt
 rules:
 - MATCH,PROXIES
