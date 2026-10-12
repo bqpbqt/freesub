@@ -5,26 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - bqpbqt
-  server: 45.149.114.171
-  port: 777
+  server: 85.209.129.5
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  type: trojan
+  password: muLkJXY1WyEbDdP-AoNpjg3HddPCAcBA
+  sni: fl.global-cdn.org
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ajv
 - name: 🇫🇮 芬兰 (Finland) 02 - bqpbqt
-  server: 185.103.110.66
-  port: 18280
+  server: 185.103.110.68
+  port: 18283
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 03 - bqpbqt
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 04 - bqpbqt
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -36,7 +34,7 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - bqpbqt
+- name: 🇫🇮 芬兰 (Finland) 04 - bqpbqt
   server: 170.168.4.59
   port: 17170
   udp: true
@@ -49,6 +47,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: trail-grpc
+- name: 🇫🇮 芬兰 (Finland) 05 - bqpbqt
+  server: 185.103.110.66
+  port: 18280
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+- name: 🇫🇮 芬兰 (Finland) 06 - bqpbqt
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,6 +70,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - bqpbqt
   - 🇫🇮 芬兰 (Finland) 04 - bqpbqt
   - 🇫🇮 芬兰 (Finland) 05 - bqpbqt
+  - 🇫🇮 芬兰 (Finland) 06 - bqpbqt
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +81,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - bqpbqt
   - 🇫🇮 芬兰 (Finland) 04 - bqpbqt
   - 🇫🇮 芬兰 (Finland) 05 - bqpbqt
+  - 🇫🇮 芬兰 (Finland) 06 - bqpbqt
 rules:
 - MATCH,PROXIES
